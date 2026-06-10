@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nuswa Kopi & Rempah baik - Nikmati perpaduan cita rasa kopi premium pilihan dan rempah alami khas Nusantara. Pesan sekarang melalui WhatsApp.">
+    <meta name="author" content="Nuswa Kopi & Rempah baik">
+    <title>Nuswa Kopi & Rempah baik | Cita Rasa Kopi & Rempah Nusantara</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- FontAwesome Icon Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header>
+        <div class="container nav-wrapper">
+            <a href="#beranda" class="logo">
+                <i class="fas fa-mug-hot"></i> Nuswa<span>Kopi & Rempah</span>
+            </a>
+            
+            <button class="mobile-nav-toggle" aria-label="Toggle Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <ul class="nav-links">
+                <li><a href="#beranda" class="active">Beranda</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#tentang-kami">Tentang Kami</a></li>
+                <li><a href="#keunggulan">Keunggulan</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+                <li><a href="#" class="btn btn-whatsapp" data-chat-wa><i class="fab fa-whatsapp"></i> Hubungi Kami</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="beranda" class="hero">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-leaf"></i> 100% Kopi & Rempah Nusantara Alami
+                </div>
+                <h1 class="hero-title">
+                    Cita Rasa Khas <span class="text-highlight">Kopi Pilihan</span> & <span class="text-highlight">Rempah Baik</span>
+                </h1>
+                <p class="hero-text">
+                    Menghadirkan kenikmatan bodi kopi yang tebal bersanding dengan kehangatan rempah alami Indonesia. Diracik khusus oleh barista kami untuk menyegarkan hari Anda dan menjaga kebugaran tubuh.
+                </p>
+                
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn btn-primary"><i class="fas fa-store"></i> Lihat Menu Kami</a>
+                    <a href="#tentang-kami" class="btn btn-outline"><i class="fas fa-info-circle"></i> Tentang Kami</a>
+                </div>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <h3>13<span>+</span></h3>
+                        <p>Variasi Menu</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>100%</h3>
+                        <p>Bahan Alami</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>5K<span>+</span></h3>
+                        <p>Pelanggan Puas</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-image-container">
+                <!-- Main Visual Image -->
+                <div class="hero-image-wrapper">
+                    <img src="assets/hero.png" alt="Nuswa Kopi dan Rempah Baik">
+                </div>
+                
+                <!-- Floating Info Cards for premium look -->
+                <div class="floating-card card-1">
+                    <div class="floating-icon">
+                        <i class="fas fa-mug-hot"></i>
+                    </div>
+                    <div class="floating-info">
+                        <h4>Aroma Kopi Premium</h4>
+                        <p>Dari biji pilihan nusantara</p>
+                    </div>
+                </div>
+                
+                <div class="floating-card card-2">
+                    <div class="floating-icon">
+                        <i class="fas fa-pepper-hot"></i>
+                    </div>
+                    <div class="floating-info">
+                        <h4>Khasiat Rempah Baik</h4>
+                        <p>Cengkeh, jahe & kapulaga pilihan</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Menu Section -->
+    <section id="menu" class="section section-bg">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Daftar Menu</span>
+                <h2 class="section-title">Menu <span>Kopi & Rempah</span> Terbaik Kami</h2>
+                <p class="section-desc">Pilih menu favorit Anda dan nikmati kelezatannya. Klik tombol pesan untuk langsung memesan lewat WhatsApp kami.</p>
+            </div>
+            
+            <!-- Category Filter Tabs -->
+            <div class="filter-tabs">
+                <button class="filter-btn active" data-filter="all">Semua Menu</button>
+                <button class="filter-btn" data-filter="americano">Americano Series</button>
+                <button class="filter-btn" data-filter="traditional">Kopi Tradisional</button>
+                <button class="filter-btn" data-filter="latte">Latte Series</button>
+                <button class="filter-btn" data-filter="spices">Teh & Rempah</button>
+            </div>
+            
+            <!-- Products Grid -->
+            <div class="products-grid">
+                
+                <!-- 1. Origin Americano -->
+                <div class="product-card" data-category="americano">
+                    <div class="product-image">
+                        <span class="product-tag tag-new">Murni</span>
+                        <button class="product-favorite" aria-label="Simpan Favorit"><i class="far fa-heart"></i></button>
+                        <img src="assets/americano.png" alt="Origin Americano">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-meta">
+                            <span class="product-category">Americano Series</span>
+                            <span class="product-takeaway"><i class="fas fa-shopping-bag"></i> Take a way</span>
+                        </div>
+                        <h3 class="product-title">Origin Americano</h3>
+                        <p class="product-desc">Kopi hitam klasik nusantara dengan aroma bold, acid yang pas, dan body yang mantap.</p>
+                        <div class="product-footer">
+                            <div class="product-price">Rp 18.000<span>/cup</span></div>
+                            <a href="#" class="product-btn" data-order-product="Origin Americano" aria-label="Pesan via WhatsApp">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Golden Bee Americano -->
+                <div class="product-card" data-category="americano">
+                    <div class="product-image">
+                        <span class="product-tag tag-popular">Terlaris</span>
+                        <button class="product-favorite" aria-label="Simpan Favorit"><i class="far fa-heart"></i></button>
+                        <img src="assets/americano.png" alt="Golden Bee americano">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-meta">
+                            <span class="product-category">Americano Series</span>
+                            <span class="product-takeaway"><i class="fas fa-shopping-bag"></i> Take a way</span>
+                        </div>
+                        <h3 class="product-title">Golden Bee americano</h3>
+                        <p class="product-desc">Perpaduan seimbang espresso americano dengan pemanis alami dari madu hutan liar murni.</p>
+                        <div class="product-footer">
+                            <div class="product-price">Rp 22.000<span>/cup</span></div>
+                            <a href="#" class="product-btn" data-order-product="Golden Bee americano" aria-label="Pesan via WhatsApp">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Rose bloom americano -->
+                <div class="product-card" data-category="americano">
+                    <div class="product-image">
+                        <span class="product-tag tag-new">Unik</span>
+                        <button class="product-favorite" aria-label="Simpan Favorit"><i class="far fa-heart"></i></button>
+                        <img src="assets/americano.png" alt="Rose bloom americano">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-meta">
+                            <span class="product-category">Americano Series</span>
+                            <span class="product-takeaway"><i class="fas fa-shopping-bag"></i> Take a way</span>
+                        </div>
+                        <h3 class="product-title">Rose bloom americano</h3>
+                        <p class="product-desc">Americano dingin dengan infused sirup kelopak mawar aromatik yang manis lembut.</p>
+                        <div class="product-footer">
+                            <div class="product-price">Rp 23.000<span>/cup</span></div>
+                            <a href="#" class="product-btn" data-order-product="Rose bloom americano" aria-label="Pesan via WhatsApp">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. coco burst americano -->
+                <div class="product-card" data-category="americano">
+                    <div class="product-image">
+                        <span class="product-tag tag-popular">Favorit</span>
+                        <button class="product-favorite" aria-label="Simpan Favorit"><i class="far fa-heart"></i></button>
+                        <img src="assets/americano.png" alt="coco burst americano">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-meta">
+                            <span class="product-category">Americano Series</span>
+                            <span class="product-takeaway"><i class="fas fa-shopping-bag"></i> Take a way</span>
+                        </div>
+                        <h3 class="product-title">coco burst americano</h3>
+                        <p class="product-desc">Kombinasi eksotis espresso bold dengan kesegaran alami air kelapa muda pilihan.</p>
+                        <div class="product-footer">
+                            <div class="product-price">Rp 24.000<span>/cup</span></div>
+                            <a href="#" class="product-btn" data-order-product="coco burst americano" aria-label="Pesan via WhatsApp">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. peach bee americano -->
+                <div class="product-card" data-category="americano">
+                    <div class="product-image">
+                        <span class="product-tag tag-new">Baru</span>
+                        <button class="product-favorite" aria-label="Simpan Favorit"><i class="far fa-heart"></i></button>
+                        <img src="assets/americano.png" alt="peach bee americano">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-meta">
+                            <span class="product-category">Americano Series</span>
+                            <span class="product-takeaway"><i class="fas fa-shopping-bag"></i> Take a way</span>
+                        </div>
+                        <h3 class="product-title">peach bee americano</h3>
+                        <p class="product-desc">Cita rasa buah peach yang manis dan harum berpadu madu murni serta espresso Americano.</p>
+                        <div class="product-footer">
+                            <div class="product-price">Rp 24.000<span>/cup</span></div>
+                            <a href="#" class="product-btn" data-order-product="peach bee americano" aria-label="Pesan via WhatsApp">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. sanger nuswa -->
+                <div class="product-card" data-category="traditional">
+                    <div class="product-image">
+                        <span class="product-tag tag-popular">Khas</span>
+                        <button class="product-favorite" aria-label="Simpan Favorit"><i class="far fa-heart"></i></button>
+                        <img src="assets/latte.png" alt="sanger nuswa">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-meta">
+                            <span class="product-category">Kopi Tradisional</span>
+                            <span class="product-takeaway"><i class="fas fa-shopping-bag"></i> Take a way</span>
+                        </div>
+                        <h3 class="product-title">sanger nuswa</h3>
+                        <p class="product-desc">Kopi sanger khas Aceh legendaris dengan racikan susu kental manis rahasia ala Nuswa.</p>
+                        <div class="product-footer">
+                            <div class="product-price">Rp 19.000<span>/cup</span></div>
+                            <a href="#" class="product-btn" data-order-product="sanger nuswa" aria-label="Pesan via WhatsApp">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 7. sanger cinamon -->
+                <div class="product-card" data-category="traditional">
+                    <div class="product-image">
+                        <span class="product-tag tag-spices">Rempah</span>
+                        <button class="product-favorite" aria-label="Simpan Favorit"><i class="far fa-heart"></i></button>
+                        <img src="assets/latte.png" alt="sanger cinamon">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-meta">
+                            <span class="product-category">Kopi Tradisional</span>
+                            <span class="product-takeaway"><i class="fas fa-shopping-bag"></i> Take a way</span>
+                        </div>
+                        <h3 class="product-title">sanger cinamon</h3>
+                        <p class="product-desc">Sanger khas yang hangat dengan bubuk kayu manis (cinnamon) aromatik penambah imunitas.</p>
+                        <div class="product-footer">
+                            <div class="product-price">Rp 21.000<span>/cup</span></div>
+                            <a href="#" class="product-btn" data-order-product="sanger cinamon" aria-label="Pesan via WhatsApp">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 8. Kopi Susu Arentara -->
+                <div class="product-card" data-category="traditional">
+                    <div class="product-image">
+                        <span class="product-tag tag-popular">Terlaris</span>
+                        <button class="product-favorite" aria-label="Simpan Favorit"><i class="far fa-heart"></i></button>
+                        <img src="assets/latte.png" alt="Kopi Susu Arentara">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-meta">
+                            <span class="product-category">Kopi Tradisional</span>
+                            <span class="product-takeaway"><i class="fas fa-shopping-bag"></i> Take a way</span>
+                        </div>
+                        <h3 class="product-title">Kopi Susu Arentara</h3>
+                        <p class="product-desc">Kopi susu creamy yang berpadu dengan manis legitnya sirup aren murni Nusantara.</p>
+                        <div class="product-footer">
+                            <div class="product-price">Rp 20.000<span>/cup</span></div>
+                            <a href="#" class="product-btn" data-order-product="Kopi Susu Arentara" aria-label="Pesan via WhatsApp">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 9. Golden butter latte -->
+                <div class="product-card" data-category="latte">
+                    <div class="product-image">
+                        <span class="product-tag tag-new">Mewah</span>
+                        <button class="product-favorite" aria-label="Simpan Favorit"><i class="far fa-heart"></i></button>
+                        <img src="assets/latte.png" alt="Golden butter latte">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-meta">
+                            <span class="product-category">Latte Series</span>
+                            <span class="product-takeaway"><i class="fas fa-shopping-bag"></i> Take a way</span>
+                        </div>
+                        <h3 class="product-title">Golden butter latte</h3>
+                        <p class="product-desc">Espresso premium dibaur butter premium yang gurih dan susu creamy manis yang memanjakan lidah.</p>
+                        <div class="product-footer">
+                            <div class="product-price">Rp 26.000<span>/cup</span></div>
+                            <a href="#" class="product-btn" data-order-product="Golden butter latte" aria-label="Pesan via WhatsApp">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 10. cloud caramel machiatto -->
+                <div class="product-card" data-category="latte">
+                    <div class="product-image">
+                        <span class="product-tag tag-popular">Populer</span>
+                        <button class="product-favorite" aria-label="Simpan Favorit"><i class="far fa-heart"></i></button>
+                        <img src="assets/latte.png" alt="cloud caramel machiatto">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-meta">
+                            <span class="product-category">Latte Series</span>
+                            <span class="product-takeaway"><i class="fas fa-shopping-bag"></i> Take a way</span>
+                        </div>
+                        <h3 class="product-title">cloud caramel machiatto</h3>
+                        <p class="product-desc">Espresso dengan foam susu tebal selembut awan yang disiram saus karamel manis legit.</p>
+                        <div class="product-footer">
+                            <div class="product-price">Rp 25.000<span>/cup</span></div>
+                            <a href="#" class="product-btn" data-order-product="cloud caramel machiatto" aria-label="Pesan via WhatsApp">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 11. roasted hazelnut latte -->
+                <div class="product-card" data-category="latte">
+                    <div class="product-image">
+                        <span class="product-tag tag-new">Klasik</span>
+                        <button class="product-favorite" aria-label="Simpan Favorit"><i class="far fa-heart"></i></button>
+                        <img src="assets/latte.png" alt="roasted hazelnut latte">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-meta">
+                            <span class="product-category">Latte Series</span>
+                            <span class="product-takeaway"><i class="fas fa-shopping-bag"></i> Take a way</span>
+                        </div>
+                        <h3 class="product-title">roasted hazelnut latte</h3>
+                        <p class="product-desc">Latte susu berpadu sirup kacang hazelnut yang dipanggang wangi dan manis gurih.</p>
+                        <div class="product-footer">
+                            <div class="product-price">Rp 25.000<span>/cup</span></div>
+                            <a href="#" class="product-btn" data-order-product="roasted hazelnut latte" aria-label="Pesan via WhatsApp">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 12. silky pistachio latte -->
+                <div class="product-card" data-category="latte">
+                    <div class="product-image">
+                        <span class="product-tag tag-new">Premium</span>
+                        <button class="product-favorite" aria-label="Simpan Favorit"><i class="far fa-heart"></i></button>
+                        <img src="assets/latte.png" alt="silky pistachio latte">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-meta">
+                            <span class="product-category">Latte Series</span>
+                            <span class="product-takeaway"><i class="fas fa-shopping-bag"></i> Take a way</span>
+                        </div>
+                        <h3 class="product-title">silky pistachio latte</h3>
+                        <p class="product-desc">Sensasi unik espresso berpadu susu kacang pistachio gurih, lembut, dengan sentuhan wangi pistachio.</p>
+                        <div class="product-footer">
+                            <div class="product-price">Rp 28.000<span>/cup</span></div>
+                            <a href="#" class="product-btn" data-order-product="silky pistachio latte" aria-label="Pesan via WhatsApp">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 13. ice teh rempah -->
+                <div class="product-card" data-category="spices">
+                    <div class="product-image">
+                        <span class="product-tag tag-spices">Rempah Baik</span>
+                        <button class="product-favorite" aria-label="Simpan Favorit"><i class="far fa-heart"></i></button>
+                        <img src="assets/spice_tea.png" alt="ice teh rempah">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-meta">
+                            <span class="product-category">Teh & Rempah</span>
+                            <span class="product-takeaway"><i class="fas fa-shopping-bag"></i> Take a way</span>
+                        </div>
+                        <h3 class="product-title">ice teh rempah</h3>
+                        <p class="product-desc">Teh hitam premium yang diseduh dingin dengan cengkeh, kayu manis, kapulaga, dan jahe yang segar menyehatkan.</p>
+                        <div class="product-footer">
+                            <div class="product-price">Rp 18.000<span>/cup</span></div>
+                            <a href="#" class="product-btn" data-order-product="ice teh rempah" aria-label="Pesan via WhatsApp">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section (Keunggulan) -->
+    <section id="keunggulan" class="section section-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Keunggulan Kami</span>
+                <h2 class="section-title">Kenapa Harus Memilih <span>Nuswa</span>?</h2>
+                <p class="section-desc">Kami memastikan setiap cangkir kopi dan rempah yang Anda konsumsi terbuat dari bahan terbaik dengan proses pengolahan yang berkualitas.</p>
+            </div>
+            
+            <div class="features-grid">
+                
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3 class="feature-title">Bahan Alami 100%</h3>
+                    <p class="feature-desc">Biji kopi dipetik dari perkebunan lokal terbaik dan rempah alami bebas dari bahan pengawet kimia.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3 class="feature-title">Menyehatkan Tubuh</h3>
+                    <p class="feature-desc">Perpaduan rempah berkhasiat tinggi membantu meredakan lelah, meningkatkan imunitas, dan menghangatkan.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <i class="fas fa-hand-holding-heart"></i>
+                    </div>
+                    <h3 class="feature-title">Hygienic Process</h3>
+                    <p class="feature-desc">Diolah dengan standar kebersihan yang tinggi untuk menjamin kesegaran dan cita rasa alami tetap terjaga.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <i class="fas fa-truck-moving"></i>
+                    </div>
+                    <h3 class="feature-title">Pesan Cepat via WA</h3>
+                    <p class="feature-desc">Sistem pemesanan praktis terintegrasi WhatsApp yang siap melayani kebutuhan Anda dengan ramah.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="tentang-kami" class="section section-bg">
+        <div class="container about-grid">
+            <div class="about-image-wrapper">
+                <img src="assets/hero.png" alt="Tentang Nuswa Kopi & Rempah">
+            </div>
+            
+            <div class="about-content">
+                <span class="section-subtitle">Tentang Kami</span>
+                <h2 class="section-title">Kombinasi Kopi & Rempah Asli <span>Nusantara</span></h2>
+                <p class="about-p">
+                    **Nuswa Kopi & Rempah baik** didirikan atas kecintaan kami terhadap kekayaan alam Nusantara, khususnya biji kopi dan herba rempah-rempah yang kaya akan manfaat. Kami percaya bahwa kopi tidak hanya menjadi minuman peningkat fokus, tetapi juga dapat dipadukan secara harmonis dengan rempah pilihan untuk menciptakan minuman yang menyehatkan tubuh.
+                </p>
+                <p class="about-p" style="margin-top: -15px;">
+                    Setiap racikan kami dikembangkan dengan penuh dedikasi untuk melestarikan ramuan rempah warisan leluhur Indonesia, dikemas secara modern agar cocok dinikmati oleh semua kalangan di era modern ini.
+                </p>
+                
+                <div class="about-stats">
+                    <div class="about-stat-box">
+                        <div class="about-stat-num">10<span>+</span></div>
+                        <div class="about-stat-label">Tahun Racikan</div>
+                    </div>
+                    
+                    <div class="about-stat-box">
+                        <div class="about-stat-num">13<span>+</span></div>
+                        <div class="about-stat-label">Varian Rasa</div>
+                    </div>
+                    
+                    <div class="about-stat-box">
+                        <div class="about-stat-num">100%</div>
+                        <div class="about-stat-label">Lokal Organik</div>
+                    </div>
+                </div>
+                
+                <a href="#" class="btn btn-coffee" data-chat-wa><i class="fab fa-whatsapp"></i> Hubungi Kami & Tanya Detail</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Map Section -->
+    <section id="kontak" class="section section-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Hubungi Kami</span>
+                <h2 class="section-title">Hubungi Kami / <span>Kunjungi Kedai</span></h2>
+                <p class="section-desc">Punya pertanyaan seputar menu atau pemesanan dalam jumlah banyak? Tim kami siap melayani Anda kapan saja.</p>
+            </div>
+            
+            <div class="contact-grid">
+                
+                <div class="contact-info-wrapper">
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Lokasi Kedai</h3>
+                            <p>Jl. Rempah Nusantara No. 99, Kebayoran Baru, Jakarta Selatan, Indonesia</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Nomor WhatsApp</h3>
+                            <p><a href="tel:083898872191">0838-9887-2191</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email Kami</h3>
+                            <p><a href="mailto:halo@nuswakopi.com">halo@nuswakopi.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Jam Operasional</h3>
+                            <p>Senin - Minggu: 09:00 - 22:00 WIB</p>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div class="map-wrapper">
+                    <!-- Standard Embedded Map for Premium Touch (Mock / Kebayoran Baru) -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.275069417855!2d106.80164227586524!3d-6.227415493760777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f14e30000001%3A0x88c227eb04ec2df8!2sKebayoran%20Baru%2C%20South%20Jakarta%20City%2C%20Jakarta!5e0!3m2!1sen!2sid!4v1717901000000!5m2!1sen!2sid" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-top">
+            
+            <div class="footer-brand">
+                <a href="#beranda" class="logo">
+                    <i class="fas fa-mug-hot"></i> Nuswa<span>Kopi & Rempah</span>
+                </a>
+                <p>Menyajikan harmoni kelezatan kopi premium dan khasiat rempah khas Nusantara untuk kesehatan dan kesegaran Anda.</p>
+                <div class="social-links">
+                    <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-btn" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-btn" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="footer-title">Menu Cepat</h3>
+                <ul class="footer-links">
+                    <li><a href="#beranda">Beranda</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#tentang-kami">Tentang Kami</a></li>
+                    <li><a href="#keunggulan">Keunggulan</a></li>
+                    <li><a href="#kontak">Kontak</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="footer-title">Kategori Menu</h3>
+                <ul class="footer-links">
+                    <li><a href="#menu">Americano Series</a></li>
+                    <li><a href="#menu">Kopi Tradisional</a></li>
+                    <li><a href="#menu">Latte Series</a></li>
+                    <li><a href="#menu">Teh & Rempah</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="footer-title">Newsletter</h3>
+                <div class="newsletter-form">
+                    <p>Dapatkan informasi promo menarik dan varian rasa baru kami.</p>
+                    <div class="input-group">
+                        <input type="email" placeholder="Masukkan email Anda" aria-label="Email untuk Newsletter">
+                        <button type="button" aria-label="Daftar"><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Nuswa Kopi & Rempah baik. Semua Hak Dilindungi.</p>
+            <div class="footer-legal">
+                <a href="#">Kebijakan Privasi</a>
+                <a href="#">Syarat & Ketentuan</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript Logic -->
+    <script src="script.js"></script>
+</body>
+</html>
