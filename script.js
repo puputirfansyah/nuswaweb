@@ -79,8 +79,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 Berikut detail pesanan saya:
 • *Jumlah Pesanan:* ....
-• *Harga Default:* Rp ${productPrice || '....'}
+• *Harga:* Rp ${productPrice || '....'}
 • *Jenis Layanan:* Take Away (Ambil di Alamat Kedai)
+• *Pengambilan Jam:* Jam 00.00 
 • *Pembayaran:* Scan Barcode QRIS
 
 Mohon informasi selengkapnya mengenai total harga dan barcode untuk pembayarannya. Terima kasih!`;
