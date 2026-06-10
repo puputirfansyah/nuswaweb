@@ -73,8 +73,17 @@ document.addEventListener('DOMContentLoaded', () => {
     
     orderButtons.forEach(button => {
         const productName = button.getAttribute('data-order-product');
+        const productPrice = button.getAttribute('data-order-product');
         // Create custom message template
-        const message = `Halo Nuswa Kopi & Rempah baik, saya tertarik untuk memesan "${productName}". Mohon informasi selengkapnya mengenai cara pemesanan. Terima kasih!`;
+        const message = `Halo Nuswa Kopi & Rempah, saya tertarik untuk memesan *"${productName}"*.
+
+Berikut detail pesanan saya:
+• *Jumlah Pesanan:* ....
+• *Harga Default:* Rp ${productPrice || '....'}
+• *Jenis Layanan:* Take Away (Ambil di Alamat Kedai)
+• *Pembayaran:* Scan Barcode QRIS
+
+Mohon informasi selengkapnya mengenai total harga dan barcode untuk pembayarannya. Terima kasih!`;
         const encodedMessage = encodeURIComponent(message);
         const waUrl = `https://api.whatsapp.com/send?phone=${waNumber}&text=${encodedMessage}`;
         
